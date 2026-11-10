@@ -1,3 +1,79 @@
-.child-app{font-family:system-ui,sans-serif;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:28px;border:1px solid #e8edf2;border-radius:16px;background:white;color:#243047}.child-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}.child-heading h3{margin-top:8px}.child-page{padding:24px 0}.child-counter{display:flex;align-items:center;justify-content:space-between;gap:24px}.child-interaction{background:#f8fafc}.child-interaction p{margin-top:16px;margin-bottom:0}@media(max-width:640px){.child-app{padding:18px}.child-counter,.child-heading{align-items:flex-start;flex-direction:column}}
+.child-app {
+  font-family: system-ui, sans-serif;
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid #e8edf2;
+  border-radius: 16px;
+  background: white;
+  color: #243047;
+}
+.child-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.child-heading h3 {
+  margin-top: 8px;
+}
+.child-page {
+  padding: 24px 0;
+}
+.child-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.child-interaction {
+  background: #f8fafc;
+}
+.child-interaction p {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  .child-app {
+    padding: 18px;
+  }
+  .child-counter,
+  .child-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 
-.child-shell-standalone{min-height:100vh}.child-shell-embedded{background:transparent}.child-shell-standalone .child-content{padding:32px}.child-content{min-width:0}.child-sidebar{background:#102d32!important}.child-sidebar .child-ant-menu{background:transparent}.child-brand{color:white;font-size:18px;font-weight:600;padding:28px 24px}.child-shell-embedded .child-app{max-width:none}@media(max-width:640px){.child-shell-standalone .child-content{padding:16px}}
+.child-shell-standalone {
+  min-height: 100vh;
+}
+.child-shell-embedded {
+  background: transparent;
+}
+.child-shell-standalone .child-content {
+  padding: 32px;
+}
+.child-content {
+  min-width: 0;
+}
+.child-sidebar {
+  background: #102d32 !important;
+}
+.child-sidebar .child-ant-menu {
+  background: transparent;
+}
+.child-brand {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 28px 24px;
+}
+.child-shell-embedded .child-app {
+  max-width: none;
+}
+@media (max-width: 640px) {
+  .child-shell-standalone .child-content {
+    padding: 16px;
+  }
+}

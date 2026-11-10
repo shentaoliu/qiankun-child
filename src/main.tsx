@@ -193,15 +193,17 @@ function render(props: AppProps = {}) {
 renderWithQiankun({
   // 首次加载时初始化，一般每次应用加载只执行一次。
   bootstrap() {
-    console.info("[react-child] bootstrap");
+    console.info("[react-child] bootstrap....");
   },
   // 每次应用激活都会执行：创建 React 根节点并注入基座 props。
   mount(props) {
+    console.log("mount.....");
     render(props as AppProps);
   },
   // 离开激活路径时卸载 React，触发组件 effect 清理并释放根节点引用。
   // 后续新增的全局监听、定时器或订阅也需在相应清理逻辑中释放。
   unmount() {
+    console.log("unmount....");
     root?.unmount();
     root = null;
   },
